@@ -1,0 +1,4 @@
+Pokrenuti skriptu u SQL-u
+Instalirati node_modules (npm_install)
+Logovanje  User name: admin  password: admin
+Zadatak nije potpuno završen
