@@ -1,0 +1,9 @@
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<div class="menu" [hidden]="visible" style="padding:0; margin:0">
+  <mat-toolbar color="primary" class="toolbarclass">        
+        <button  class="logoutbutton" color="primary" (click)="logout() " >Odjavi se</button>        
+  </mat-toolbar>
+</div>
+<router-outlet></router-outlet>

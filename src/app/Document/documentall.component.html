@@ -1,0 +1,95 @@
+<div *ngIf="document">
+    <body class="bodyEdit">
+        <label class="lblTitleEdit">Documents edit!</label>
+        <p *ngFor="let test of tests">{{test}}</p>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Broj dokumenta</th>
+                        <th>Ukupno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>
+                        <input [disabled]="isDisabled" class="inputCategoryEdit" [(ngModel)]="document.documentDate">
+                    </td>
+                    <td>
+                        <input [disabled]="isDisabled" class="inputNameEdit" [(ngModel)]="document.documentNumber">
+                    </td>
+                    <td>
+                        <input disabled class="inputRelaseDateEdit" [(ngModel)]="document.sum">
+                    </td>
+                    <td>
+                        <button color="green" (click)="goBack()">Nazad</button>
+                        <button [hidden]="isHiddenSave" (click)="add()">Sačuvaj</button>
+                    </td>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div>
+            <br>
+            <button [disabled]="isDisabled" (click)="addFieldValue()">Dodaj novu stavku</button>
+        </div>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Naziv</th>
+                    <th>Cena</th>
+                    <th>Količina</th>
+                    <th>Redni broj</th>
+                    <th>Ukupno</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of document.document_Details; let i = index">
+                    <td>
+                        <input [disabled]="isDisabled" [(ngModel)]="item.name" class="form-control" type="text" name="{{item.name}}" />
+                    </td>
+                    <td>
+                        <input [disabled]="isDisabled"  [(ngModel)]="item.price" class="form-control" type="text" name="{{item.price}}" />
+                    </td>
+                    <td>
+                        <input [disabled]="isDisabled" [(ngModel)]="item.quantity" class="form-control" type="text"
+                            name="{{item.quantity}}" />
+                    </td>
+                    <td>
+                        <input [disabled]="isDisabled" [(ngModel)]="item.ordinalNumber" class="form-control" type="text"
+                            name="{{item.ordinalNumber}}" />
+                    </td>
+                    <td>
+                        <input disabled [(ngModel)]="item.sum" class="form-control" type="text" name="{{item.sum}}" />
+                    </td>
+                    <td>
+                        <button [disabled]="isDisabled" class="btn btn-default" type="button" (click)="deleteFieldValue(i)">Obrisi stavku</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input [disabled]="isDisabled" class="form-control" type="text" id="newAttributeName"
+                            [(ngModel)]="newAttribute.name" name="newAttributeName" />
+                    </td>
+                    <td>
+                        <input [disabled]="isDisabled" class="form-control" type="text" id="newAttributePrice"
+                            [(ngModel)]="newAttribute.price" name="newAttributePrice" />
+                    </td>
+                    <td>
+                        <input [disabled]="isDisabled" class="form-control" type="text" id="newAttributequantity"
+                            [(ngModel)]="newAttribute.quantity" name="newAttributequantity" />
+                    </td>
+                    <td>
+                        <input [disabled]="isDisabled" class="form-control" type="text" id="newAttributeordinalNumber"
+                            [(ngModel)]="newAttribute.ordinalNumber" name="newAttributeordinalNumber" />
+                    </td>
+                    <td>
+                        <input disabled class="form-control" type="text" id="newAttributesum"
+                            [(ngModel)]="newAttribute.sum" name="newAttributesum" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>

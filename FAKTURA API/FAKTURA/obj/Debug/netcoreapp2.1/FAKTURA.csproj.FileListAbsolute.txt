@@ -1,0 +1,14 @@
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\bin\Debug\netcoreapp2.1\FAKTURA.deps.json
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\bin\Debug\netcoreapp2.1\FAKTURA.runtimeconfig.json
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\bin\Debug\netcoreapp2.1\FAKTURA.runtimeconfig.dev.json
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\bin\Debug\netcoreapp2.1\FAKTURA.dll
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.csprojAssemblyReference.cache
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.csproj.CoreCompileInputs.cache
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.RazorAssemblyInfo.cache
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.RazorAssemblyInfo.cs
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.AssemblyInfoInputs.cache
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.AssemblyInfo.cs
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.RazorTargetAssemblyInfo.cache
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\bin\Debug\netcoreapp2.1\FAKTURA.pdb
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.dll
+C:\Users\Gamer\source\repos\FAKTURA\FAKTURA\obj\Debug\netcoreapp2.1\FAKTURA.pdb

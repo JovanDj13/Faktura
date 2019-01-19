@@ -1,0 +1,30 @@
+<body >
+      <div>
+          <button [disabled]="isDisabled"  (click)="gotoAdd()">Dodaj novi dokument</button>
+      </div>
+    <table class="Document">  
+      <tr>
+        <th style="width: 130px;">datum </th>
+        <th style="width: 130px;">broj  </th>
+        <th style="width: 130px;">suma</th>
+        <th style="width: 50px;">Actions</th>
+      </tr>
+      <tbody *ngFor="let d of documents ">
+        <tr>
+          <td>{{d.documentDate}}</td>
+          <td>{{d.documentNumber}}</td>
+          <td>{{d.sum}}</td>
+          <td>
+            <span matTooltip="View details">
+              <mat-icon class="viewIcon" (click)="gotoDetail(d.document_ID)">visibility</mat-icon>
+            </span>          
+            <span matTooltip="Edit">
+              <mat-icon class="editIcon" (click)="gotoEdit(d.document_ID)">edit</mat-icon>
+            </span>    
+            <span matTooltip="Delete">
+              <mat-icon class="deleteIcon" (click)="delete(d.document_ID)">delete</mat-icon>
+            </span>
+          </td>
+        </tr>
+    </table>
+  </body>
