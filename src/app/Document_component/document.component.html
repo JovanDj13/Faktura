@@ -11,7 +11,7 @@
       </tr>
       <tbody *ngFor="let d of documents ">
         <tr>
-          <td>{{d.documentDate}}</td>
+          <td>{{d.documentDate | date: 'dd.MM.yyyy'}}</td>
           <td>{{d.documentNumber}}</td>
           <td>{{d.sum}}</td>
           <td>
